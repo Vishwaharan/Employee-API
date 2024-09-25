@@ -1,0 +1,129 @@
+/* src/components/EmployeeForm.css */
+
+.employee-form-container {
+    width: 90%;
+    max-width: 500px;
+    /* Reduced max-width for a more compact look */
+    margin: 20px auto;
+    padding: 20px;
+    /* Reduced padding for a more compact look */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Softer shadow */
+    border-radius: 8px;
+    /* Slightly reduced border radius */
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+}
+
+.employee-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 10px;
+    /* Reduced margin for better spacing */
+    padding: 8px;
+    /* Reduced padding for better touch targets */
+    border-radius: 6px;
+    /* More subtle rounded corners */
+    transition: background-color 0.3s;
+}
+
+.form-group:hover {
+    background-color: #f9f9f9;
+    /* Slightly lighter on hover */
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    /* Bolder labels for emphasis */
+    margin-bottom: 4px;
+    /* Reduced margin for labels */
+    color: #444;
+    /* Slightly darker label color */
+}
+
+.form-control {
+    padding: 10px;
+    /* Slightly reduced padding */
+    font-size: 14px;
+    /* Adjusted font size for compactness */
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    /* More rounded input fields */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    /* Brighter focus color */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+    /* Updated focus shadow */
+    outline: none;
+}
+
+.btn {
+    padding: 10px;
+    /* Reduced button size for compactness */
+    font-size: 14px;
+    /* Adjusted font size */
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    /* More subtle rounding */
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+    max-width: 200px;
+    /* Reduced max-width for buttons */
+    margin: 10px auto;
+    /* Reduced margin */
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+    /* Lighter shadow */
+}
+
+.btn-primary:hover {
+    background: linear-gradient(90deg, #0056b3, #004494);
+    transform: scale(1.02);
+    /* Slightly reduced hover scale effect */
+}
+
+.btn-warning {
+    background: #ffc107;
+    color: #212529;
+}
+
+.btn-warning:hover {
+    background: #e0a800;
+    transform: scale(1.02);
+    /* Slightly reduced hover scale effect */
+}
+
+.btn-danger {
+    background: #dc3545;
+    color: white;
+}
+
+.btn-danger:hover {
+    background: #c82333;
+    transform: scale(1.02);
+    /* Slightly reduced hover scale effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .employee-form-container {
+        padding: 15px;
+        /* Maintain padding on small screens */
+    }
+}

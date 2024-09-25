@@ -28,11 +28,6 @@ This project is a RESTful API developed using the Spring Boot framework to manag
 
 - **Frontend**:
   - ReactJS
-  - Tailwind CSS (for styling)
+  - CSS (for styling)
 
-## Installation
 
-### Backend Setup
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Vishwaharan/Employee-API.git
